@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doce Encanto - Confeitaria</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300..700&family=Open+Sans:wght@300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            
+            <label for="menu">
+                <span class="cabecalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                
+                <li class="lista-menu___item"><a href="#" class="lista-menu__link">Bolos</a></li>
+                <li class="lista-menu___item"><a href="#" class="lista-menu__link">Tortas</a></li>
+                <li class="lista-menu___item"><a href="#" class="lista-menu__link">Doces Finos</a></li>
+                <li class="lista-menu___item"><a href="#" class="lista-menu__link">Cupcakes</a></li>
+            </ul>
+            
+        </div>
+    </header>
+
+    <section class="banner">
+        <h2 class="banner__titulo">Doce Encanto</h2>
+        <p class="banner__texto">Tornamos seus momentos mais doces</p>
+        <input type="search" class="banner__pesquisa" placeholder="O que você deseja?">
+    
+    </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Nossos Produtos</h2>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/bolo.jpg" alt="Bolo de festa">Bolos</div>
+                <div class="swiper-slide"><img src="images/totas1.jpg" alt="Torta de frutas">Tortas</div>
+                <div class="swiper-slide"><img src="images/doces.jpg" alt="Doces decorados">Doces Finos</div>
+                <div class="swiper-slide"><img src="images/cupcake.jpg" alt="Cupcakes decorados">Cupcakes</div>
+            </div>
+            <!-- <div class="swiper-pagination"></div> -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+
+
+    <section class="sobre">
+        <h2 class="sobre__titulo">Sobre Nós</h2>
+        <p class="sobre__texto">
+            A Confeitaria Doce Encanto é especializada em criar momentos inesquecíveis. <br>
+            Com ingredientes de alta qualidade e receitas únicas, transformamos sonhos em sabores. <br>
+            Venha nos conhecer e encante-se!
+        </p>
+        
+    </section>
+
+
+    <section class="contato">
+        <h2 class="contato__titulo">Entre em Contato</h2>
+        <p class="contato__texto">Fale conosco para encomendas, dúvidas ou sugestões. Estamos prontos para atender você!
+        </p>
+        <form class="contato__formulario" action="#" method="post">
+            <label for="nome" class="contato__label">Nome</label>
+            <input type="text" id="nome" name="nome" class="contato__input" placeholder="Seu nome" required>
+
+            <label for="email" class="contato__label">E-mail</label>
+            <input type="email" id="email" name="email" class="contato__input" placeholder="Seu e-mail" required>
+
+            <label for="mensagem" class="contato__label">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" class="contato__textarea" placeholder="Escreva sua mensagem"
+                required></textarea>
+
+            <button type="submit" class="contato__botao">Enviar</button>
+        </form>
+    </section>
+
+
+    <footer class="rodape">
+        <h2 class="rodape__titulo">Doce Encanto - Confeitaria</h2>
+        <p class="rodape__texto">Endereço: Rua dos Sabores, 123 - Cidade Doce</p>
+        <p class="rodape__texto">Contato: (11) 1234-5678</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+
+</html>
