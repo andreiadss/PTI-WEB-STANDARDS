@@ -9,3 +9,5 @@
 * Flexbox: Para alinhamento e layout responsivo.
 * Google Fonts
 * Swipper
+
+# Link: https://andreiadss.github.io/PTI-WEB-STANDARDS/
